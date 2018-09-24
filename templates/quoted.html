@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<div>
+<table align="center" border="1">
+    <tr>
+        <th>   Name   </th>
+        <th>   Price   </th>
+        <th>   Symbol   </th>
+    </tr>
+    <tr>
+    <td>{{ chart["name"] }}</td>
+    <td>{{ chart["price"] }}</td>
+    <td>{{ chart["symbol"] }}</td>
+    </tr>
+</table>
+</div>
+{% endblock %}
