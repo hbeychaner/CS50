@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Buy shares
+{% endblock %}
+
+{% block main %}
+<div>
+<table align="center" border="1"><form action="/buy" method="post">
+    <tr>Please enter the symbol of the company and the number of shares you'd like to purchase.<br></tr>
+    <tr><input type="text" name="symbol" placeholder="GOOG"></td></tr>
+    <tr><td><input type="number" min="0"  required maxlength="6" value="0" name="buy_num"></td></tr>
+    <tr></tr><td><input type="submit"></input></form></td></tr></form>
+</table>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table align="center" class="table table-bordered table-hover">
+        <tr>
+        {% for header in headers %}
+            <th>{{ header }}</th>
+        {% endfor %}
+        </tr>
+
+        {% for item in portfolio %}
+            <tr>
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+                <td>{{ item[2] }}</td>
+                <td>{{ item[3] }}</td>
+                <td>{{ item[4] }}</td>
+           </tr>
+        {% endfor %}
+</table>
+
+<div>
+    <p>
+        <b>Your current cash holdings:</b> {{ holdings }}<br>
+        <b>Your current total value:</b> {{ total_value }}<br>
+    </p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+<table align="center" class="table table-bordered table-hover">
+    <tr>
+    {% for header in headers %}
+        <th>{{ header }}</th>
+        {% endfor %}
+        </tr>
+        {% for i in range(length)  %}
+            <tr>
+                <td>{{ co[i] }}</td>
+                <td>{{ tr[i] }}</td>
+                <td>{{ qu[i] }}</td>
+                <td>{{ pr[i] }}</td>
+                <td>{{ ti[i] }}</td>
+           </tr>
+        {% endfor %}
+</table>
+
+{% endblock %}
